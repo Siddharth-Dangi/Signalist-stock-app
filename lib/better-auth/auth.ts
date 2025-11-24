@@ -25,7 +25,9 @@ export const getAuth = async () => {
             maxPasswordLength: 128,
             autoSignIn: true,
         },
-        plugins: [nextCookies()],
+        plugins: [
+            nextCookies(),
+        ]
     });
 
     return authInstance;
